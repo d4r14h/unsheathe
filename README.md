@@ -25,7 +25,5 @@ Should be able to use python in windows and python3 in linux
 ```  
 
 # Coming Soon
-- More files  
-- More functionality  
+- ARG support like a real command line tool  
 - *GUI????*  
-- Better Documentation
