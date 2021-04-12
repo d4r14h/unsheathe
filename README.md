@@ -15,7 +15,9 @@ USE FOR EDUCATIONAL PURPOSES ONLY** *~~(no one is going to, but I have to put it
 ```
 git clone https://github.com/d4r14h/unsheathe.git
 cd unsheathe
-python unsheathe.py
+python3 unsheathe.py -i /path/to/input/file -o /path/to/output
+
+-h does not work as of yet
 ```  
 
 # Python Version
@@ -25,5 +27,4 @@ Should be able to use python in windows and python3 in linux
 ```  
 
 # Coming Soon
-- ARG support like a real command line tool  
 - *GUI????*  
