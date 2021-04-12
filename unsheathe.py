@@ -1,12 +1,40 @@
 import re
 import datetime
+import getopt, sys
 
-def closePrompt():
-    prompt = input("Would you like to close this program? (Y/n)\n>>> ")
-    if prompt in ['y', 'yes']:
-        exit(0)
-    elif prompt in ['n', 'no']:
-        closePrompt()
+# Removes the first option (the file name)
+argumentList = sys.argv[1:]
+
+# Options
+options = "hi:o:"
+
+# Long Options
+long_options = ["Help", "Input =", "Output ="]
+
+try:
+    # Parsing argument
+    arguments, values = getopt.getopt(argumentList, options, long_options)
+     
+    # checking each argument
+    for currentArgument, currentValue in arguments:
+ 
+        if currentArgument in ("-h", "--Help"):
+            print ("Usage: python3 unsheathe.py -[h,i] -[o]\n-h  Displays this help message\n-i specifies input file path\n-o specifies output file path")
+             
+        elif currentArgument in ("-i", "--Input"):
+            print ("Displaying file_name:", sys.argv[0])
+             
+        elif currentArgument in ("-o", "--Output"):
+            print (("Outputting to output file: (% s)") % (currentValue))
+
+except getopt.error as err:
+    # output error, and return with an error code
+    print (str(err))
+
+inputFile = sys.argv[2]
+
+outputFile1 = sys.argv[4]
+
 
 print("""
 ----------------------------------------------------------
@@ -16,8 +44,7 @@ print("""
 | You have to input the name of the txt file EXAMPLE:    |
 | filename42069.txt                                      |
 ----------------------------------------------------------""")
-file = input("The filename:\n>>> ")
-with open(file, 'r') as text:
+with open(inputFile, 'r') as text:
 
 
 
@@ -29,15 +56,8 @@ email = str(email).replace('[', '')
 email = str(email).replace(']', '')
 print(email)
 
-fileName = str(file + "eextract")
-fileName.replace('.', '_')
-print(fileName)
-outPrompt = input("Would you like to output to a text file? (Y/n)\n>>> ")
-if outPrompt.lower() in ['y', 'yes']:
-    with open(fileName, 'w') as outputFile:
-        outputFile.write(email)
-    print("Extracted Emails written successfully to " + fileName + ".txt")
-elif outPrompt.lower() in ['n', 'no']:
-    closePrompt()
+with open(outputFile1, 'w') as outputFile:
+    outputFile.write(email)
+print("Extracted Emails written successfully to " + outputFile1)
 
 
