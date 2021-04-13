@@ -19,7 +19,7 @@ try:
     for currentArgument, currentValue in arguments:
  
         if currentArgument in ("-h", "--Help"):
-            print ("Usage: python3 unsheathe.py -[h,i] -[o]\n-h  Displays this help message\n-i specifies input file path\n-o specifies output file path")
+            print ("Usage: python3 unsheathe.py -[h,i] -[o]\n\n-h  Displays this help message\n\n-i specifies input file path\n\n-o specifies output file path")
              
         elif currentArgument in ("-i", "--Input"):
             print ("Displaying file_name:", sys.argv[0])
@@ -30,6 +30,9 @@ try:
 except getopt.error as err:
     # output error, and return with an error code
     print (str(err))
+
+except IndexError:
+    pass
 
 inputFile = sys.argv[2]
 
