@@ -1,5 +1,5 @@
 # Unsheathe
-- Unsheathe.py extracts emails and passwords from a .txt file and prints them (option of output file, too)  
+- Unsheathe.py extracts emails and passwords from a .txt file, prints them, and outputs to a .txt file  
 - More to come soon
 
 # DISCLAIMERS
