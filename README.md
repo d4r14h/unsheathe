@@ -20,6 +20,9 @@ python3 unsheathe.py -e -i /path/to/input/file -o /path/to/output
 
 -h does not work as of yet
 ```  
+<p align="center">
+	<img src="https://imgur.com/YfszltV">
+</p>
 
 # Python Version
 ```
