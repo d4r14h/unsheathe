@@ -31,3 +31,4 @@ Should be able to use python in windows and python3 in linux
 
 # Coming Soon
 - *GUI????*  
+- More repos from me!
