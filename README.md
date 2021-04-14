@@ -20,9 +20,8 @@ python3 unsheathe.py -e -i /path/to/input/file -o /path/to/output
 
 -h does not work as of yet
 ```  
-<p align="center">
-	<img src="https://imgur.com/YfszltV">
-</p>
+
+![unsheathedemo](https://user-images.githubusercontent.com/82164005/114742670-7d8dac00-9d3b-11eb-88e6-626d1d082169.gif)
 
 # Python Version
 ```
