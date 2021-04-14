@@ -2,7 +2,7 @@ import re
 import datetime
 import getopt, sys
 
-# TODO: add email/password options (-e, -p)
+# TODO: Fix IndexError
 
 # Removes the first option (the file name)
 argumentList = sys.argv[1:]
