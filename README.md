@@ -4,7 +4,9 @@
 
 # DISCLAIMERS
 **I AM NOT RESPONSIBLE IN ANY WAY IF YOU USE THIS TO DO ILLEGAL ACTIVITY  
-USE FOR EDUCATIONAL PURPOSES ONLY** *~~(no one is going to, but I have to put it here)~~*  
+USE FOR EDUCATIONAL PURPOSES ONLY** *~~(no one is going to, but I have to put it here)~~*
+**THE TEST FILE FOR NORDVPN WAS NOT CRACKED BY US. IT WAS FOUND ON THE INTERNET USING VARIOUS METHODS (google dorking).
+PLEASE DO NOT SUE US**
   
 # What's new
 - Combined passextractor.py into unsheathe.py to create a 2-in-1 tool
