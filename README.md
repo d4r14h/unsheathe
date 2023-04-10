@@ -27,10 +27,9 @@ python3 unsheathe.py -e -i /path/to/input/file -o /path/to/output
 
 # Python Version
 ```
-Python 3.9
+Python 3.7+
 Should be able to use python in windows and python3 in linux
 ```  
 
-# Coming Soon
-- *GUI????*  
-- More repos from me!
+# Coming Soon:
+Major Rewrite
